@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodejs Zoom Class Syllabus</title>
+    <link href="./main.css" type="text/css" rel="stylesheet"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <!-- Page Layout here -->
+<div class="navbar">
+    <nav>
+      <div class="nav-wrapper">
+        <a class="brand-logo" href="#"> &nbsp;Node.js Zoom Class</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="https://nodejszoom.netlify.app/">Prepare</a></li>
+          <li><a href="https://bit.ly/nodejsonline">Join Class</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+  <div id="container">
+    <div class="row">
+      <div class="col s12 m12 l3">
+        <nav class=" searched search-title-filter">
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <ul class="collapsible" data-collapsible="expandable">
+          <li class="">
+            <div class="collapsible-header active"><i class="material-icons">event_note</i>Week1 (coming soon)</div>
+            <div class="collapsible-body filter-container" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+              <form action="#">
+                <ul>
+                  <li>
+                    <input class="with-gap" name="group1" type="radio" id="Today" />
+                    <label for="Today">Today</label>
+                  </li>
+                  <li>
+                    <input class="with-gap" name="group1" type="radio" id="week" />
+                    <label for="week">This week</label>
+                  </li>
+                  <li>
+                    <input class="with-gap" name="group1" type="radio" id="month" selected />
+                    <label for="month">This month</label>
+                  </li>
+                  <li>
+                    <input class="with-gap" name="group1" type="radio" id="year" />
+                    <label for="year">This year</label>
+                  </li>
+                  <li>
+                    <input class="with-gap" name="group1" type="radio" id="Custom" />
+                    <label for="Custom">Custom date</label>
+                  </li>
+                </ul>
+  
+  
+              </form>
+            </div>
+          </li>
+          <li class="">
+            <div class="collapsible-header active"><i class="material-icons">event_note</i>Week2 (coming soon)</div>
+            <div class="collapsible-body " style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+              <p>
+                <select multiple>
+                <!--<option value="" disabled selected>Choose your option</option>-->
+                <option value="1" selected>Lindy Hop</option>
+                <option value="2" selected>Blues</option>
+                <option value="3" selected>Balboa</option>
+                <option value="3" selected>Jazz</option>
+                <option value="3" selected>Shag</option>
+                <option value="3" selected>Charleston</option>
+                <option value="3" selected>Other</option>
+              </select>
+                <label>Materialize Select</label>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header active"><i class="material-icons">event_note</i>Week3(coming soon)</div>
+            <div class="collapsible-body">
+              <p><select id="country-select"></select>
+                <label>Optgroups</label></p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header active"><i class="material-icons">event_note</i>Week4(coming soon)</div>
+            <div class="collapsible-body filter-container">
+  
+              <ul>
+                <li>
+                  <input type="checkbox" name="event-type-filter" class="event-type-filter filled-in" id="socials" checked="checked" value="social" />
+                  <label for="socials">Socials</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="event-type-filter" class="event-type-filter  filled-in" id="classes" checked="checked" value="class" />
+                  <label for="classes">Classes</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="event-type-filter" class="event-type-filter filled-in" id="festival-event" checked="checked" value="festival" />
+                  <label for="festival-event">Festivals & events</label>
+                </li>
+              </ul>
+  
+            </div>
+          </li>
+        </ul>
+  
+      </div>
+  
+      <!-- Cards container -->
+      <div class="col s12 m12 l9">
+  
+        <h4>Nodejs Zoom Class</h4>
+        <h5>FREE</h5>
+        <div id="card-container" class="row">
+          <!-- Col: Card 1 -->
+          <div class="col s12 m6 l4">
+            <!-- Card 1 -->
+            <div class="card">
+              <div class="card-content white-text">
+                <div class="card__date">
+                  <span class="card__date__day">7</span>
+                  <span class="card__date__month">Sept</span>
+                </div>
+                <div class="card__meta">
+                  <a href="#"><i class="small material-icons">room</i>Zoom/Meet</a>
+                  <time>17th March</time>
+                </div>
+                <span class="card-title grey-text text-darken-4">Syllabus</span>
+  
+                <p class="card-subtitle grey-text text-darken-2">The class will majorly be about server side programming with some real life projects. Any passionate person can learn this stuff </p>
+                <div class="row card-row">
+                  <span class="text-darken-2 card-info"><i class="small material-icons">label</i>&nbsp;Web API Development</span>
+                </div>
+                <div class="row card-row">
+                  <span class="text-darken-2 card-info"><i class="small material-icons">label</i>&nbsp;Practical Cryptography</span>
+                </div>
+                <div class="row card-row">
+                  <span class="text-darken-2 card-info"><i class="small material-icons">label</i>&nbsp;Cloud Functions</span>
+                </div>
+                <div class="row card-row">
+                  <span class="text-darken-2 card-info"><i class="small material-icons">label</i>&nbsp;Build A Banking Portal With Nodejs</span>
+                </div>
+                <div class="row card-row">
+                    <span class="text-darken-2 card-info"><i class="small material-icons">label</i>&nbsp;Build A Commandline Tool</span>
+                  </div>
+                  <div class="row card-row">
+                    <span class="text-darken-2 card-info"><i class="small material-icons">label</i>&nbsp;Real Time Chat App With Socket.io</span>
+                  </div>
+                  <div class="row card-row">
+                    <span class="text-darken-2 card-info"><i class="small material-icons">label</i>&nbsp;Server Side Concepts (OAuth,HTTP ,Async Patterns, Databases)</span>
+                  </div>
+                  <div class="row card-row">
+                    <span class="text-darken-2 card-info"><i class="small material-icons">label</i>&nbsp; And many more as time allows</span>
+                  </div>
+              </div>
+             
+            </div>
+            <!-- End of card -->
+          </div>
+          <!-- End of col -->
+          <!-- Col: Card 1 -->
+          <div class="col s12 m6 l4">
+            <!-- Card 1 -->
+            <div class="card">
+              <div class="card-content white-text">
+                <div class="card__date">
+                  <span class="card__date__day">15</span>
+                  <span class="card__date__month">Aug</span>
+                </div>
+                <div class="card__meta">
+                  <a href="#"><i class="small material-icons">room</i>WhatsApp</a>
+                  <time>17th March</time>
+                </div>
+                <span class="card-title grey-text text-darken-4">Join Class</span>
+  
+                <p class="card-subtitle grey-text text-darken-2">Join Fellow Passionate Coders On Whatsapp. Get To Know Each Other, conduct discussions and ask questions</p>
+                <span class="text-darken-2 card-info"><i class="small material-icons">label</i>&nbsp;https://bit.ly/nodejsonline</span>
+              </div>
+              <div class="card-action">
+                <a href="https://bit.ly/nodejsonline"><i class="material-icons">&nbsp;language</i>JOIN</a>
+                <a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" class="card-action-right"><i class="material-icons">&nbsp;share</i>SHARE</a>
+              </div>
+            </div>
+            <!-- End of card -->
+          </div>
+          <!-- Col: Card 1 -->
+          <div class="col s12 m6 l4">
+            <!-- Card 1 -->
+            <div class="card">
+              <div class="card-content white-text">
+                <div class="card__date">
+                  <span class="card__date__day">15</span>
+                  <span class="card__date__month">Aug</span>
+                </div>
+                <div class="card__meta">
+                  <a href="#"><i class="small material-icons">room</i>Home</a>
+                  <time>17th March</time>
+                </div>
+                <span class="card-title grey-text text-darken-4">Prepare For Class</span>
+  
+                <p class="card-subtitle grey-text text-darken-2">In order to be ready for the program, we will be sharing with you some preparation modules. This will help you to meet the pre-requisites</p>
+                <span class="text-darken-2 card-info"><i class="small material-icons">label</i>&nbsp;https://nodejszoom.netlify.app</span>
+              </div>
+              <div class="card-action">
+                <a href="#"><i class="material-icons">&nbsp;language</i>PREPARE</a>
+              </div>
+            </div>
+            <!-- End of card -->
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./main.js"></script>
+</body>
+</html>
