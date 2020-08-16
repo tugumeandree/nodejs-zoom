@@ -9,7 +9,7 @@ $( "#search" ).keyup(function( event ) {
      event.preventDefault();
   }
   //console.log("Filter..."+value);
-  //renderCards(filterByAttr("title",value, data));
+  //renderCards(filterByAttr("title",value, data));32
   renderCards(applyFilters());
 });
 
