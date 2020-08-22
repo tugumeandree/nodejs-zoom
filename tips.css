@@ -43,6 +43,9 @@
 .sidenav.dark li a i.material-icons {
   color: rgba(255, 255, 255, 0.5);
 }
+.fab{
+  color: rgba(255, 255, 255, 0.5);
+}
 nav, header, main, footer {
   padding-left: 300px;
 }
